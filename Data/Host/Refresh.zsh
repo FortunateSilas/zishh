@@ -1,0 +1,1 @@
+echo "This will Refresh the Host (Valet & Terminal)"

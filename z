@@ -1,0 +1,50 @@
+# RISE WITH NANDINI ROSE
+
+# define Essential Variables
+function z() {
+
+# Get Config
+. "${HOME}/zeesh/_/CONFIG"
+
+    if [ ! -d "${HOME}/Host" ]; then
+
+        # Init Host
+        echo "This must initialize Host"
+
+    else
+
+        local ZEESH="${HOME}/zeesh/App/Zeesh"
+
+        # Clear
+
+        # Get Header
+        # . ${MY_HEADER}
+
+        ####################################
+
+        if [ ! ${1} ]; then
+
+            # Zeesh
+            . "${ZEESH}/Zeesh.zsh"
+
+        elif [ ! ${2} ]; then
+
+            # Zeesh / App
+            . "${ZEESH}/Zeesh_${1}.zsh"
+
+        else
+
+            # Zeesh / App / Create
+            . "${ZEESH}/${1}/${2}.zsh"
+            
+        fi
+
+        ####################################
+
+        # Get Header
+        # . ${MY_FOOTER}
+
+
+    fi
+
+}

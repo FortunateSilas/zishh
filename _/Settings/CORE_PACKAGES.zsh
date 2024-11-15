@@ -1,0 +1,6 @@
+source "/home/fortunate/zeesh/Core/Packages/files.zsh"
+source "/home/fortunate/zeesh/Core/Packages/folders.zsh"
+source "/home/fortunate/zeesh/Core/Packages/sed.zsh"
+source "/home/fortunate/zeesh/Core/Packages/shell.zsh"
+source "/home/fortunate/zeesh/Core/Packages/valet.zsh"
+source "/home/fortunate/zeesh/Core/Packages/wordpress.zsh"

@@ -1,0 +1,29 @@
+# Main
+local Z="${HOME}/zeesh"
+local SYSTEM="${Z}/_"
+local SETTINGS="${SYSTEM}/Settings"
+
+# ################################################
+
+function SOURCEFILE() {
+
+. "${1}/${2}.zsh"
+
+}
+
+SOURCEFILE ${SETTINGS} DIRECTORIES
+
+# Source Core
+SOURCEFILE ${SETTINGS} CORE_PACKAGES
+SOURCEFILE ${SETTINGS} CORE_FRAMEWORKS
+
+# Source Functions
+SOURCEFILE ${SETTINGS} FUNCTIONS
+
+# Source Host
+# SOURCEFILE ${SETTINGS} HOST
+SOURCEFILE ${SETTINGS} APPS
+
+function RUNNING() {
+    print "$(date +%F_%R) : ${1}"
+}
