@@ -1,7 +1,7 @@
 # Core
 local CORE="${Z}/Core"
 local CORE_F="${CORE}/Frameworks"
-local CORE_P="${CORE}/Packages"
+local CORE_S="${CORE}/Scripts"
 
 # App
 local APP="${Z}/App"
@@ -48,7 +48,7 @@ function COMPILESCRIPTS() {
 }
 
 # Get Core Scripts
-COMPILESCRIPTS $CORE_P CORE_PACKAGES
+COMPILESCRIPTS $CORE_S CORE_SCRIPTS
 COMPILESCRIPTS $CORE_F CORE_FRAMEWORKS
 
 # Get App Functions
