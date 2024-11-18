@@ -10,48 +10,59 @@ function Wordpress() {
 	local DBHOST="DBHOST"
 	local DBPASS="DBPASS"
 
-    case "${OPTION}" in
-		"Folder" )
+	# Directories
+	local DIR="${HOST_A}/Wordpress"
 
-			# done
-			echo "This will open the app's folder"
+	if [ ! ${1} ]; then
+	
+		# No parameter specified
+		cd $DIR
 
-		;;
-		"Browse" )
+	else
 
-			# Upgrade
-			echo "This will open the app in your default browser"
+		case "${OPTION}" in
+			"Folder" )
 
-		;;
-		"Update" )
+				# done
+				echo "This will open the app's folder"
 
-			# Upgrade
-			echo "This will update the wordpress core files"
+			;;
+			"Browse" )
 
-		;;
-		"Database" )
+				# Upgrade
+				echo "This will open the app in your default browser"
 
-			# Upgrade
-			echo "This will load database functions for this app"
+			;;
+			"Update" )
 
-		;;
-		"Plugin" )
+				# Upgrade
+				echo "This will update the wordpress core files"
 
-			# Upgrade
-			echo "This will manage single plugins and bundled plugins"
+			;;
+			"Database" )
 
-		;;
-		"Exit" )
+				# Upgrade
+				echo "This will load database functions for this app"
 
-			exit
+			;;
+			"Plugin" )
 
-		;;
-		* )
+				# Upgrade
+				echo "This will manage single plugins and bundled plugins"
 
-			echo "Your options are : [ 
-			INIT | UPGRADE |  ]"
+			;;
+			"Exit" )
 
-		;;
-	esac
+				exit
+
+			;;
+			* )
+
+				echo "Your options are : [ 
+				INIT | UPGRADE |  ]"
+
+			;;
+		esac
+	fi
 
 }

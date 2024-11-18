@@ -1,10 +1,11 @@
 # RISE WITH NANDINI ROSE
 
 # define Essential Variables
-function z() {
 
 # Get Config
 . "${HOME}/zeesh/_/CONFIG"
+
+function z() {
 
     if [ ! -d "${HOME}/Host" ]; then
 
@@ -14,7 +15,7 @@ function z() {
     else
 
         # local ZEESH="${HOME}/zeesh/App/Zeesh"
-        local ZEESH="${HOME}/zeesh/App/Home"
+        local ZEESH="${HOME}/zeesh/App/z"
 
         # Clear
 
@@ -39,11 +40,6 @@ function z() {
             . "${ZEESH}/${1}/${2}.zsh"
             
         fi
-
-        ####################################
-
-        # Get Header
-        # . ${MY_FOOTER}
 
 
     fi

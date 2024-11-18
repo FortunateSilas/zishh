@@ -2,7 +2,16 @@ function Wordpress() {
 
 	# Selector
     local OPTION=${1}
-    local DIR="${HOST_A}/Wordpress"
+	
+	# Config
+	local APPNAME="APPNAME"
+	local FRAMEWORK="FRAMEWORK"
+	local DBNAME="DBNAME"
+	local DBHOST="DBHOST"
+	local DBPASS="DBPASS"
+
+	# Directories
+	local DIR="${HOST_A}/Wordpress"
 
 	if [ ! ${1} ]; then
 	
@@ -13,27 +22,42 @@ function Wordpress() {
 
 		case "${OPTION}" in
 			"Folder" )
-			# Host Initialize
 
-				# Comment
-				xdg-open ${DIR}
+				# done
+				echo "This will open the app's folder"
+
+			;;
+			"Browse" )
+
+				# Upgrade
+				echo "This will open the app in your default browser"
+
+			;;
+			"Update" )
+
+				# Upgrade
+				echo "This will update the wordpress core files"
 
 			;;
 			"Database" )
-			# Host Refresh
 
-				# Comment
-				echo "Code for second option"
+				# Upgrade
+				echo "This will load database functions for this app"
+
+			;;
+			"Plugin" )
+
+				# Upgrade
+				echo "This will manage single plugins and bundled plugins"
 
 			;;
 			* )
 
 				echo "Your options are : [ 
-				First | Second ] (* Edit)"
+				INIT | UPGRADE |  ]"
 
 			;;
 		esac
-		
 	fi
 
 }
