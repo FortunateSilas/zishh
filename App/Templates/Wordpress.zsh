@@ -4,27 +4,36 @@ function Wordpress() {
     local OPTION=${1}
     local DIR="${HOST_A}/Wordpress"
 
-    case "${OPTION}" in
-		"Folder" )
-        # Host Initialize
+	if [ ! ${1} ]; then
+	
+		# No parameter specified
+		cd $DIR
 
-			# Comment
-			xdg-open ${DIR}
+	else
 
-		;;
-		"Database" )
-        # Host Refresh
+		case "${OPTION}" in
+			"Folder" )
+			# Host Initialize
 
-			# Comment
-			echo "Code for second option"
+				# Comment
+				xdg-open ${DIR}
 
-		;;
-		* )
+			;;
+			"Database" )
+			# Host Refresh
 
-			echo "Your options are : [ 
-			First | Second ] (* Edit)"
+				# Comment
+				echo "Code for second option"
 
-		;;
-	esac
+			;;
+			* )
+
+				echo "Your options are : [ 
+				First | Second ] (* Edit)"
+
+			;;
+		esac
+		
+	fi
 
 }

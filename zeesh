@@ -13,7 +13,8 @@ function z() {
 
     else
 
-        local ZEESH="${HOME}/zeesh/App/Zeesh"
+        # local ZEESH="${HOME}/zeesh/App/Zeesh"
+        local ZEESH="${HOME}/zeesh/App/Home"
 
         # Clear
 

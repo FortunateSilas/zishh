@@ -9,7 +9,7 @@ local APP_F="${APP}/Functions"
 local APP_T="${APP}/Templates"
 
 # Zeesh Data
-# local ZEESH="${HOME}/zeesh/App/Zeesh"
+# local ZEESH="${HOME}/zeesh/App/Home"
 
 # Data
 local DATA="${Z}/Data"
