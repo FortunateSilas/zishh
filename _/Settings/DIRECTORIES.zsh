@@ -18,10 +18,10 @@ local DATA_H="${DATA}/Host"
 
 # Host
 local HOST="${HOME}/Host"
-local HOST_A="${HOST}/Apps"
-local HOST_B="${HOST}/_"
-local HOST_B_FRAMEWORKS="${BIN}/Frameworks"
-local HOST_B_TOOLS="${BIN}/Tools"
+local HOST_A="${HOME}/Host/Apps"
+local HOST_B="${HOME}/Host/_"
+local HOST_B_FRAMEWORKS="${HOME}/Host/_/Frameworks"
+local HOST_B_TOOLS="${HOME}/Host/_/Tools"
 
 function COMPILESCRIPTS() {
 
