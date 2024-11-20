@@ -49,7 +49,7 @@ function Folder() {
 		"Enter" )
 
 			# Comment
-			folder_enter $FOLDER
+			folder_entePr $FOLDER
 
 		;;
 		"Exit" )
