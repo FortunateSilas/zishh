@@ -3,7 +3,7 @@
 # define Essential Variables
 
 # Get Config
-. "${HOME}/zeesh/_/CONFIG"
+. "${HOME}/zishh/_/CONFIG"
 
 function z() {
 
@@ -14,8 +14,8 @@ function z() {
 
     else
 
-        # local ZEESH="${HOME}/zeesh/App/Zeesh"
-        local ZEESH="${HOME}/zeesh/App/z"
+        # local zishh="${HOME}/zishh/App/zishh"
+        local zishh="${HOME}/zishh/App/z"
 
         # Clear
 
@@ -26,18 +26,18 @@ function z() {
 
         if [ ! ${1} ]; then
 
-            # Zeesh
-            . "${ZEESH}/Zeesh.zsh"
+            # zishh
+            . "${zishh}/zishh.zsh"
 
         elif [ ! ${2} ]; then
 
-            # Zeesh / App
-            . "${ZEESH}/Zeesh_${1}.zsh"
+            # zishh / App
+            . "${zishh}/zishh_${1}.zsh"
 
         else
 
-            # Zeesh / App / Create
-            . "${ZEESH}/${1}/${2}.zsh"
+            # zishh / App / Create
+            . "${zishh}/${1}/${2}.zsh"
             
         fi
 

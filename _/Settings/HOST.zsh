@@ -1,2 +1,2 @@
-source "/home/fortunate/zeesh/Data/Host/Initialize.zsh"
-source "/home/fortunate/zeesh/Data/Host/Refresh.zsh"
+source "/home/fortunate/zishh/Data/Host/Initialize.zsh"
+source "/home/fortunate/zishh/Data/Host/Refresh.zsh"
