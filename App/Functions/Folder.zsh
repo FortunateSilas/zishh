@@ -18,7 +18,6 @@ function Folder() {
 		"Create" )
 
 			# Comment
-            echo "Create a Folder"
 			folder_create "$FOLDER"
 
 		;;

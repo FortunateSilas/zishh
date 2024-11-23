@@ -1,27 +1,35 @@
 # Core
-local CORE="${Z}/Core"
-local CORE_F="${CORE}/Frameworks"
-local CORE_S="${CORE}/Scripts"
+local CORE="${HOME}/zishh/Core"
+local CORE_F="${HOME}/zishh/Core/Frameworks"
+local CORE_S="${HOME}/zishh/Core/Scripts"
 
 # App
-local APP="${Z}/App"
-local APP_F="${APP}/Functions"
-local APP_T="${APP}/Templates"
+local APP="${HOME}/zishh/App"
+local APP_F="${HOME}/zishh/App/Functions"
+local APP_T="${HOME}/zishh/App/Templates"
 
 # zishh Data
 # local zishh="${HOME}/zishh/App/Home"
 
 # Data
-local DATA="${Z}/Data"
-local DATA_A="${DATA}/Apps"
-local DATA_H="${DATA}/Host"
+local DATA="${HOME}/zishh/Data"
+local DATA_A="${HOME}/zishh/Data/Apps"
+local DATA_H="${HOME}/zishh/Data/Host"
 
 # Host
 local HOST="${HOME}/Host"
 local HOST_A="${HOME}/Host/Apps"
 local HOST_B="${HOME}/Host/_"
+
+# App Frameworks
 local HOST_B_FRAMEWORKS="${HOME}/Host/_/Frameworks"
+local HBF_WORDPRESS="${HOME}/Host/_/Frameworks/Wordpress"
+local HBF_LARAVEL="${HOME}/Host/_/Frameworks/Laravel"
+local HBF_BLANK="${HOME}/Host/_/Frameworks/Blank"
+
+# Tools
 local HOST_B_TOOLS="${HOME}/Host/_/Tools"
+local HBT_PHPMYADMIN="${HOME}/Host/_/Tools/phpMyAdmin"
 
 function COMPILESCRIPTS() {
 
@@ -56,6 +64,3 @@ COMPILESCRIPTS $APP_F FUNCTIONS
 
 # Get Apps & Apps
 COMPILESCRIPTS $DATA_A APPS
-# COMPILESCRIPTS $DATA_H HOST
-
-echo "SOURCEFILE Works!!!"

@@ -10,12 +10,12 @@ function z() {
     if [ ! -d "${HOME}/Host" ]; then
 
         # Init Host
-        echo "This must initialize Host"
+        Host Init
 
     else
 
         # local zishh="${HOME}/zishh/App/zishh"
-        local zishh="${HOME}/zishh/App/z"
+        local ZISHH="${HOME}/zishh/App/z"
 
         # Clear
 
@@ -27,17 +27,17 @@ function z() {
         if [ ! ${1} ]; then
 
             # zishh
-            . "${zishh}/zishh.zsh"
+            . "${ZISHH}/zishh.zsh"
 
         elif [ ! ${2} ]; then
 
             # zishh / App
-            . "${zishh}/zishh_${1}.zsh"
+            . "${ZISHH}/zishh_${1}.zsh"
 
         else
 
             # zishh / App / Create
-            . "${zishh}/${1}/${2}.zsh"
+            . "${ZISHH}/${1}/${2}.zsh"
             
         fi
 

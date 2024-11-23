@@ -30,4 +30,5 @@ function SOURCEFILE() {
 
 function RUNNING() {
     print "$(date +%F_%R) : ${1}"
+    shell_pause
 }
