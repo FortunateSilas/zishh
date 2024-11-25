@@ -21,6 +21,9 @@ Folder Create ${HOST_B_FRAMEWORKS}
 # Create Tools
 Folder Create ${HOST_B_TOOLS}
 
+# Create Tools
+Folder Create ${HOST_B_DATA}
+
 # Enter Frameworks
 # Folder Enter ${HOST_B_FRAMEWORKS}
 
