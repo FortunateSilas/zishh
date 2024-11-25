@@ -1,14 +1,14 @@
-function Wordpress() {
+function Test4() {
 
 	# Selector
     local OPTION=${1}
 	
 	# Config
-	local APPNAME="APPNAME"
-	local FRAMEWORK="FRAMEWORK"
-	local DBNAME="DBNAME"
-	local DBHOST="DBHOST"
-	local DBPASS="DBPASS"
+	local APPNAME='Test4'
+	local FRAMEWORK="Wordpress"
+	local DBNAME='Test4'
+	local DBHOST="root"
+	local DBPASS=""
 
 	# Directories
 	local DIR="${HOST_A}/Wordpress"
@@ -24,7 +24,7 @@ function Wordpress() {
 			"Folder" )
 
 				# done
-				Folder Open ${DIR}
+				echo "This will open the app's folder"
 
 			;;
 			"Browse" )
@@ -46,12 +46,6 @@ function Wordpress() {
 
 			;;
 			"Plugin" )
-
-				# Upgrade
-				echo "This will manage single plugins and bundled plugins"
-
-			;;
-			"Info" )
 
 				# Upgrade
 				echo "This will manage single plugins and bundled plugins"

@@ -10,6 +10,7 @@ function shell_refresh() {
 
     # Refresh Shell
     source ${HOME}/.zshrc
+    exec zsh
 }
 
 # Shell Pause

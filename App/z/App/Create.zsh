@@ -51,3 +51,6 @@ Folder Enter ${HOST_A}/${APPNAME}
 
 # generate ssl
 valet secure
+
+# Refresh Shell
+shell_refresh

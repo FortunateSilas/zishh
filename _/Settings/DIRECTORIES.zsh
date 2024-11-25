@@ -17,7 +17,7 @@ local AT_LARAVEL="${HOME}/zishh/App/Templates/Laravel.zsh"
 
 # Data
 local DATA="${HOME}/zishh/Data"
-local DATA_A="${HOME}/zishh/Data/Apps"
+local DATA_A="${HOME}/Host/_/Apps"
 local DATA_H="${HOME}/zishh/Data/Host"
 
 # Host
@@ -34,6 +34,9 @@ local HBF_BLANK="${HOME}/Host/_/Frameworks/Blank"
 # Tools
 local HOST_B_TOOLS="${HOME}/Host/_/Tools"
 local HBT_PHPMYADMIN="${HOME}/Host/_/Tools/phpMyAdmin"
+
+# Tools
+local HOST_B_DATA="${DATA_A}"
 
 function COMPILESCRIPTS() {
 
