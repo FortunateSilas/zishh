@@ -30,13 +30,13 @@ function Wordpress() {
 			"Browse" )
 
 				# Upgrade
-				echo "This will open the app in your default browser"
+				valet open
 
 			;;
 			"Update" )
 
 				# Upgrade
-				echo "This will update the wordpress core files"
+				wp core update
 
 			;;
 			"Database" )
