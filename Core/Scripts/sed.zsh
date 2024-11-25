@@ -1,6 +1,8 @@
 # SED Find Replace
 function sed_find_replace() {
 
+    RUNNING "Editing" ${3}
+
     local Old=${1}
     local New=${2}
     local Filename=${3}

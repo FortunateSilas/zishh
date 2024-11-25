@@ -3,6 +3,7 @@ function File() {
 	# Selector
     local OPTION=${1}
     local FILE=${2}
+    local FILE2=${3}
 
     if [ ! "${3}" ]; then
 
@@ -53,6 +54,12 @@ function File() {
 
 			# Comment
 			file_wipe $FILE
+
+		;;
+		"Copy" )
+
+			# Comment
+			file_copy $FILE $FILE2
 
 		;;
 		* )

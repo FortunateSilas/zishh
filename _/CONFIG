@@ -1,7 +1,7 @@
 # Main
 local Z="${HOME}/zishh"
-local SYSTEM="${Z}/_"
-local SETTINGS="${SYSTEM}/Settings"
+local SYSTEM="${HOME}/zishh/_"
+local SETTINGS="${HOME}/zishh/_/Settings"
 
 # ################################################
 

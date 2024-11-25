@@ -6,7 +6,11 @@ local CORE_S="${HOME}/zishh/Core/Scripts"
 # App
 local APP="${HOME}/zishh/App"
 local APP_F="${HOME}/zishh/App/Functions"
-local APP_T="${HOME}/zishh/App/Templates"
+
+# App Templates
+local AT_WORDPRESS="${HOME}/zishh/App/Templates/Wordpress.zsh"
+local AT_BLANK="${HOME}/zishh/App/Templates/Blank.zsh"
+local AT_LARAVEL="${HOME}/zishh/App/Templates/Laravel.zsh"
 
 # zishh Data
 # local zishh="${HOME}/zishh/App/Home"

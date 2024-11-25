@@ -4,11 +4,11 @@ function Wordpress() {
     local OPTION=${1}
 	
 	# Config
-	local APPNAME="APPNAME"
-	local FRAMEWORK="FRAMEWORK"
-	local DBNAME="DBNAME"
-	local DBHOST="DBHOST"
-	local DBPASS="DBPASS"
+	local APPNAME='Wordpress'
+	local FRAMEWORK="Wordpress"
+	local DBNAME='Wordpress'
+	local DBHOST="root"
+	local DBPASS=""
 
 	# Directories
 	local DIR="${HOST_A}/Wordpress"

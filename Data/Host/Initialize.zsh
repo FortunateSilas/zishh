@@ -25,28 +25,30 @@ Folder Create ${HOST_B_TOOLS}
 # Folder Enter ${HOST_B_FRAMEWORKS}
 
 # Create Wordpress
-Folder Create ${HBF_WORDPRESS}
-Folder Enter ${HBF_WORDPRESS}
-echo "valet link && valet secure"
+Folder Copy ${HOME}/Downloads/wordpress ${HBF_WORDPRESS}
 
 # Create Laravel
-Folder Create ${HBF_LARAVEL}
-Folder Enter ${HBF_LARAVEL}
-echo "valet link && valet secure"
+# Folder Create ${HBF_LARAVEL}
+# Folder Enter ${HBF_LARAVEL}
+# echo "valet link && valet secure"
 
 # Create Blank
-Folder Create ${HBF_BLANK}
-Folder Enter ${HBF_BLANK}
-echo "valet link && valet secure"
+# Folder Create ${HBF_BLANK}
+# Folder Enter ${HBF_BLANK}
+# echo "valet link && valet secure"
 
 # Enter Tools
 # Folder Enter ${HOST_B_TOOLS}
 
 # create phpMyAdmin
-Folder Create ${HBT_PHPMYADMIN}
-Folder Enter ${HBT_PHPMYADMIN}
-echo "valet link && valet secure"
+# Folder Create ${HBT_PHPMYADMIN}
+# Folder Enter ${HBT_PHPMYADMIN}
+# echo "valet link && valet secure"
 
 # Enter Apps
 Folder Enter ${HOST_A}
-echo "valet park"
+
+shell_pause
+shell_pause
+
+valet park

@@ -57,6 +57,18 @@ function Folder() {
 			folder_exit 
 
 		;;
+		"Copy" )
+
+			# Comment
+			folder_copy ${2} ${3}
+
+		;;
+		"Move" )
+
+			# Comment
+			folder_exit 
+
+		;;
 		* )
 
 			echo "Your Folders are : [ 

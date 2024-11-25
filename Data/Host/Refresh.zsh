@@ -1,1 +1,5 @@
-echo "This will Refresh the Host (Valet & Terminal)"
+# Source ZSH
+shell_refresh
+
+# Restart Valet
+valet_restart

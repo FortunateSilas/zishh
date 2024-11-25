@@ -10,6 +10,13 @@ function folder_read() {
     # get folder size
 }
 
+# Folder Copy
+function folder_copy() {
+    
+    # Edit Folder
+    cp -r "${1}" "${2}"
+}
+
 # Folder Edit
 function folder_edit() {
     

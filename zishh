@@ -27,12 +27,12 @@ function z() {
         if [ ! ${1} ]; then
 
             # zishh
-            . "${ZISHH}/zishh.zsh"
+            . "${ZISHH}/Zishh.zsh"
 
         elif [ ! ${2} ]; then
 
             # zishh / App
-            . "${ZISHH}/zishh_${1}.zsh"
+            . "${ZISHH}/Zishh_${1}.zsh"
 
         else
 

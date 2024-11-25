@@ -1,5 +1,6 @@
 source "/home/fortunate/zishh/Core/Scripts/files.zsh"
 source "/home/fortunate/zishh/Core/Scripts/folders.zsh"
+source "/home/fortunate/zishh/Core/Scripts/mysql.zsh"
 source "/home/fortunate/zishh/Core/Scripts/sed.zsh"
 source "/home/fortunate/zishh/Core/Scripts/shell.zsh"
 source "/home/fortunate/zishh/Core/Scripts/valet.zsh"
