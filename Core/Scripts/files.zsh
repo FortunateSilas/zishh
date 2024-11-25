@@ -1,6 +1,12 @@
 # Files
 
 # File Create
+function file_copy() {
+    # Create File
+    cp "${1}" "${2}"
+}
+
+# File Create
 function file_create() {
     # Create File
     touch "${1}"
