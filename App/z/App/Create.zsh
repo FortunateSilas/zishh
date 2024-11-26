@@ -1,5 +1,7 @@
 # user input : project name
-echo "Enter your App/Website's name: "
+echo "Enter your App/Website's name : "
+echo "=============================== "
+shell_newline
 read APPNAME_INPUT
 
 local APPNAME="${(C)APPNAME_INPUT}"
@@ -14,15 +16,21 @@ Folder Enter ${HOST_A}
 shell_newline
 
 # user input : select framework
-echo "Available Frameworks: "
+echo "Available Frameworks : "
+echo "====================== "
+shell_newline
 echo "1. Blank"
 echo "2. Wordpress"
 echo "3. Laravel"
 
 shell_newline
 
-echo "Select Framework by Typing Number: "
+echo "Select Framework by Typing Number : "
+echo "=================================== "
+shell_newline
 read APPFRAMEWORK_INPUT
+
+shell_newline
 
 local APPFRAMEWORK="${APPFRAMEWORK_INPUT}"
 
@@ -48,6 +56,8 @@ esac
 
 # cd apps/project
 Folder Enter ${HOST_A}/${APPNAME}
+
+shell_newline
 
 # generate ssl
 valet secure

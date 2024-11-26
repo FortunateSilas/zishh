@@ -14,11 +14,9 @@ Folder Delete ${APPNAME}
 echo "Removing Data File : Host/_/Data/${APPNAME}.zsh"
 File Delete ${APPNAME}
 
-echo "Removing Domain from valet : ${APPNAME}"
-
 echo "Removing Domain SSL certificates"
 
-File Delete "${SSL_FOLDER}/${APPNAME}.${DOMAIN}.conf"
-File Delete "${SSL_FOLDER}/${APPNAME}.${DOMAIN}.crt"
-File Delete "${SSL_FOLDER}/${APPNAME}.${DOMAIN}.csr"
-File Delete "${SSL_FOLDER}/${APPNAME}.${DOMAIN}.key"
+File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.conf"
+File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.crt"
+File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.csr"
+File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.key"
