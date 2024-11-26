@@ -7,11 +7,11 @@ function File() {
 
     if [ ! "${3}" ]; then
 
-        RUNNING "File ${1} ${2}"
+        RUNNING "${0} ${1} ${2}"
 
     else
 
-        RUNNING "File ${1} ${2} ${3}"
+        RUNNING "${0} ${1} ${2} ${3}"
 
     fi
 

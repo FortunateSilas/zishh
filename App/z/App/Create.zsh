@@ -54,9 +54,6 @@ case "${APPFRAMEWORK}" in
     ;;
 esac
 
-# cd apps/project
-Folder Enter ${HOST_A}/${APPNAME}
-
 shell_newline
 
 # generate ssl
