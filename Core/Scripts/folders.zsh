@@ -28,7 +28,7 @@ function folder_edit() {
 function folder_open() {
 
     # Edit File
-    nautilus .
+    xdg-open .
 }
 
 # Folder Delete
