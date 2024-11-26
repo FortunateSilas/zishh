@@ -35,6 +35,6 @@ function app_wordpress() {
     
     shell_pause
 
-    wp core install --url="${APPNAME}.${VALET_DOMAIN}" --title="${APPNAME}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}"
+    wp core install --url="${1}.${VALET_DOMAIN}" --title="${1}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}"
 
 }

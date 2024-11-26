@@ -17,10 +17,6 @@ local AT_LARAVEL="${HOME}/zishh/App/Templates/Laravel.zsh"
 
 # Data
 local DATA="${HOME}/zishh/Data"
-local DATA_A="${HOME}/Host/_/Data/Apps"
-local DATA_U="${HOME}/Host/_/Data/User"
-local DATA_T="${HOME}/Host/_/Data/Tools"
-local DATA_F="${HOME}/Host/_/Data/Frameworks"
 local DATA_H="${HOME}/zishh/Data/Host"
 
 # Host
@@ -39,7 +35,11 @@ local HOST_B_TOOLS="${HOME}/Host/_/Tools"
 local HBT_PHPMYADMIN="${HOME}/Host/_/Tools/phpMyAdmin"
 
 # Tools
-local HOST_B_DATA="${DATA_A}"
+local HOST_DATA="${HOME}/Host/_/Data"
+local HOST_DATA_A="${HOME}/Host/_/Data/Apps"
+local HOST_DATA_U="${HOME}/Host/_/Data/User"
+local HOST_DATA_T="${HOME}/Host/_/Data/Tools"
+local HOST_DATA_F="${HOME}/Host/_/Data/Frameworks"
 
 function COMPILECONFIGS() {
 
@@ -72,7 +72,7 @@ function COMPILEAPPS() {
     local DIR="${1}"
 
     # Specify the output file
-    local FILE="${HOST_B}/APPS.zsh"
+    local FILE="${HOST_DATA}/APPS.zsh"
 
     # Reset CORE.zsh
     echo -n > ${FILE}
@@ -97,4 +97,4 @@ COMPILECONFIGS $CORE_F CORE_FRAMEWORKS
 COMPILECONFIGS $APP_F FUNCTIONS
 
 # Get Apps & Apps
-COMPILEAPPS $HOST_B_DATA
+COMPILEAPPS $HOST_DATA_A

@@ -6,11 +6,11 @@ function Database() {
 
     if [ ! "${3}" ]; then
 
-        RUNNING "Folder ${1} ${2}"
+        RUNNING "${0} ${1} ${2}"
 
     else
 
-        RUNNING "Folder ${1} ${2} ${3}"
+        RUNNING "${0} ${1} ${2} ${3}"
 
     fi
 
