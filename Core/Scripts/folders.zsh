@@ -35,7 +35,7 @@ function folder_open() {
 function folder_delete() {
 
     # Delete folder
-    trash ${1}
+    rm -r ${1}
 }
 
 # Folder Enter

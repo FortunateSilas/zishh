@@ -21,6 +21,12 @@ function Database() {
 			database_create "$DBNAME"
 
 		;;
+		"Delete" )
+
+			# Comment
+			database_delete "$DBNAME"
+
+		;;
 		* )
 
 			echo "Your Folders are : [ 

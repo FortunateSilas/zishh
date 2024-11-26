@@ -15,7 +15,10 @@ function SOURCEFILE() {
 . "${HOME}/zishh/_/Settings/CORE_SCRIPTS.zsh"
 . "${HOME}/zishh/_/Settings/CORE_FRAMEWORKS.zsh"
 . "${HOME}/zishh/_/Settings/FUNCTIONS.zsh"
-. "${HOST_A}/APPS.zsh"
+. "${HOST_B}/APPS.zsh"
+. "${HOST_B}/FRAMEWORKS.zsh"
+. "${HOST_B}/USER.zsh"
+. "${HOST_B}/TOOLS.zsh"
 
 # Source Core
 # SOURCEFILE ${SETTINGS} CORE_SCRIPTS

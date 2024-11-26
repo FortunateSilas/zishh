@@ -19,6 +19,13 @@ function file_edit() {
     gedit "${1}"
 }
 
+# File Edit
+function file_delete() {
+
+    # Edit File
+    rm -f "${1}"
+}
+
 # File Read
 function file_read() {
 

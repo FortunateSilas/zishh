@@ -17,7 +17,10 @@ local AT_LARAVEL="${HOME}/zishh/App/Templates/Laravel.zsh"
 
 # Data
 local DATA="${HOME}/zishh/Data"
-local DATA_A="${HOME}/Host/_/Apps"
+local DATA_A="${HOME}/Host/_/Data/Apps"
+local DATA_U="${HOME}/Host/_/Data/User"
+local DATA_T="${HOME}/Host/_/Data/Tools"
+local DATA_F="${HOME}/Host/_/Data/Frameworks"
 local DATA_H="${HOME}/zishh/Data/Host"
 
 # Host

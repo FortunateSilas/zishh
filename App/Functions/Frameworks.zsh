@@ -32,5 +32,9 @@ function app_wordpress() {
     sed_find_replace 'DBPASS="DBPASS"' 'DBPASS=""' "${DATA_A}/${1}.zsh"
 
     sed_find_replace 'local DIR="${HOST_A}/Wordpress"' "local DIR="${HOST_A}/${1}"" "${DATA_A}/${1}.zsh"
+    
+    shell_pause
+
+    wp core install --url="${APPNAME}.${VALET_DOMAIN}" --title="${APPNAME}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}"
 
 }

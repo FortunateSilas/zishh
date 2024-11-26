@@ -28,6 +28,12 @@ function File() {
 			file_edit $FILE
 
 		;;
+		"Delete" )
+
+			# Comment
+			file_delete $FILE
+
+		;;
 		"Read" )
 
 			# Comment
