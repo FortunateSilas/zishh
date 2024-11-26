@@ -38,7 +38,7 @@ local HBT_PHPMYADMIN="${HOME}/Host/_/Tools/phpMyAdmin"
 # Tools
 local HOST_B_DATA="${DATA_A}"
 
-function COMPILESCRIPTS() {
+function COMPILECONFIGS() {
 
 
     # Specify the directory containing the .zsh files
@@ -62,12 +62,36 @@ function COMPILESCRIPTS() {
     done
 }
 
+function COMPILEAPPS() {
+
+
+    # Specify the directory containing the .zsh files
+    local DIR="${1}"
+
+    # Specify the output file
+    local FILE="${HOST_B}/APPS.zsh"
+
+    # Reset CORE.zsh
+    echo -n > ${FILE}
+
+    # sleep 1
+
+    # Loop through each .zsh file in the DIR
+    for file in "$DIR"/*; do
+        # Check if the file exists and is readable
+        if [ -r "$file" ]; then
+            # Append the source command to the output file
+            echo "source \"$file\"" >> "$FILE"
+        fi
+    done
+}
+
 # Get Core Scripts
-COMPILESCRIPTS $CORE_S CORE_SCRIPTS
-COMPILESCRIPTS $CORE_F CORE_FRAMEWORKS
+COMPILECONFIGS $CORE_S CORE_SCRIPTS
+COMPILECONFIGS $CORE_F CORE_FRAMEWORKS
 
 # Get App Functions
-COMPILESCRIPTS $APP_F FUNCTIONS
+COMPILECONFIGS $APP_F FUNCTIONS
 
 # Get Apps & Apps
-COMPILESCRIPTS $DATA_A APPS
+COMPILEAPPS $HOST_B_DATA
