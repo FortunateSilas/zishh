@@ -6,7 +6,7 @@ function sed_find_replace() {
     local New=${2}
     local Filename=${3}
 
-    RUNNING "Editing" $(echo ${Filename})
+    RUNNING "Updating ${Old} in ${Filename}"
 
     # SED Find Replace
     sed -i 's|'${Old}'|'${New}'|g' ${Filename}

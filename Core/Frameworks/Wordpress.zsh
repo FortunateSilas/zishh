@@ -21,11 +21,16 @@ case "${OPTION}" in
     "Database" )
 
         case "${2}" in
+
             "Export" )
+
                 Database Export
+
             ;;
             "Import" )
-                Database Export
+
+                Database Import
+
             ;;
             * )
             ;;

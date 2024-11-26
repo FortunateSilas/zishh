@@ -7,7 +7,7 @@ function Wordpress() {
 	local APPNAME="APPNAME"
 	local FRAMEWORK="FRAMEWORK"
 	local DBNAME="DBNAME"
-	local DBHOST="DBHOST"
+	local DBHOST="DBUSER"
 	local DBPASS="DBPASS"
 
 	# Directories
