@@ -1,11 +1,12 @@
 # SED Find Replace
 function sed_find_replace() {
 
-    RUNNING "Editing" ${3}
 
     local Old=${1}
     local New=${2}
     local Filename=${3}
+
+    RUNNING "Editing" $(echo ${Filename})
 
     # SED Find Replace
     sed -i 's|'${Old}'|'${New}'|g' ${Filename}

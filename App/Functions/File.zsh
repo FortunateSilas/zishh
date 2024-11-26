@@ -48,6 +48,12 @@ function File() {
 			file_read_line $FILE $LINE
 
 		;;
+		"FindReplace" )
+
+			# Comment
+			sed_find_replace $${1} ${2} ${3}
+
+		;;
 		"Write" )
 
             local MESSAGE=${3}

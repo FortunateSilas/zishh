@@ -1,7 +1,13 @@
-echo "Enter your App/Website's name: "
+echo "Enter your App/Website's name : "
+echo "=============================== "
+
+shell_newline
+
 read APPNAME_INPUT
 
 local APPNAME="${(C)APPNAME_INPUT}"
+
+shell_clear
 
 Folder Enter "${HOST_A}/"
 
@@ -15,7 +21,6 @@ echo "Removing Data File : Host/_/Data/${APPNAME}.zsh"
 File Delete ${APPNAME}
 
 echo "Removing Domain SSL certificates"
-
 File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.conf"
 File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.crt"
 File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.csr"

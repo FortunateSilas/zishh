@@ -20,8 +20,16 @@ case "${OPTION}" in
     ;;
     "Database" )
 
-        # Upgrade
-        echo "This will load database functions for this app"
+        case "${2}" in
+            "Export" )
+                Database Export
+            ;;
+            "Import" )
+                Database Export
+            ;;
+            * )
+            ;;
+        esac
 
     ;;
     "Plugin" )

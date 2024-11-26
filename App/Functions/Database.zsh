@@ -27,6 +27,34 @@ function Database() {
 			database_delete "$DBNAME"
 
 		;;
+		"Export" )
+
+			# Export database if it exist in mysql
+			if [ -d "${MYSQL_DATABASES_PATH}/${THIS_FOLDER}" ]; then
+
+				wp db export "./${THIS_FOLDER}.sql"
+
+			else
+
+				echo "Database does not exist..."
+
+			fi
+
+		;;
+		"Import" )
+
+			# Export database if it exist in mysql
+			if [ ! -d "${MYSQL_DATABASES_PATH}/${THIS_FOLDER}" ]; then
+
+				wp db import "./${THIS_FOLDER}.sql"
+
+			else
+
+				echo "Database exists..."
+
+			fi
+
+		;;
 		* )
 
 			echo "Your Folders are : [ 
