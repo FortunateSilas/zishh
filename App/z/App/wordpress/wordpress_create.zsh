@@ -10,9 +10,10 @@ function app_wordpress() {
     File Copy "${AT_WORDPRESS}" "${HOST_DATA_A}/${1}.zsh"
 
     shell_pause
+    shell_newline
 
-    echo "Updating ${1} WP-Config file : "
-    echo "============================== "
+    echo "Updating WP-Config file : "
+    echo "========================= "
 
     # Change mysql name
     sed_find_replace "define( 'DB_NAME', 'database_name_here' );" "define( 'DB_NAME', '${1}' );" "${HOST_A}/${1}/wp-config.php"
@@ -25,8 +26,8 @@ function app_wordpress() {
 
     shell_newline
 
-    echo "Updating ${1} Data file : "
-    echo "========================= "
+    echo "Updating Data file : "
+    echo "==================== "
 
     sed_find_replace 'function Wordpress() {' "function ${1}() {" "${HOST_DATA_A}/${1}.zsh"
     sed_find_replace 'APPNAME="APPNAME"' "APPNAME='${1}'" "${HOST_DATA_A}/${1}.zsh"
@@ -45,11 +46,10 @@ function app_wordpress() {
     Folder Enter ${HOST_A}/${APPNAME}
     
     shell_pause
-
     shell_newline
 
     echo "Installing Wordpress : "
-    ECHO "DO NOT FORGET TO COPY YOUR WP-ADMIN PASSWORD "
+    echo "DO NOT FORGET TO COPY YOUR WP-ADMIN PASSWORD "
     echo "============================================ "
 
     wp core install --url="https://${1}.${VALET_DOMAIN}" --title="${1}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}" --skip-email

@@ -10,7 +10,6 @@ local APP_F="${HOME}/zishh/App/Functions"
 # App Templates
 local AT_WORDPRESS="${HOME}/zishh/App/Templates/Wordpress.zsh"
 local AT_BLANK="${HOME}/zishh/App/Templates/Blank.zsh"
-local AT_LARAVEL="${HOME}/zishh/App/Templates/Laravel.zsh"
 
 # zishh Data
 # local zishh="${HOME}/zishh/App/Home"
