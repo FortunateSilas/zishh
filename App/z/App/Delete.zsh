@@ -24,7 +24,7 @@ shell_newline
 
 echo "Deleting Data File : "
 echo "==================== "
-File Delete ${APPNAME}
+File Delete "${HOST_DATA_A}/${APPNAME}.zsh"
 
 shell_newline
 

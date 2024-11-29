@@ -3,6 +3,8 @@ local Z="${HOME}/zishh"
 local SYSTEM="${HOME}/zishh/_"
 local SETTINGS="${HOME}/zishh/_/Settings"
 
+local MYSQL_DATABASES_PATH="/var/lib/mysql"
+
 # ################################################
 
 function SOURCEFILE() {
