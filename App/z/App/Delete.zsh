@@ -37,5 +37,11 @@ File Delete "${VALET_CERTIFICATES}/${APPNAME}.${VALET_DOMAIN}.key"
 
 shell_newline
 
+echo "Deleting Domain Config : "
+echo "================================== "
+File Delete "${NGINX_DOMAIN_CONFIGS}/${APPNAME}.${VALET_DOMAIN}"
+
+shell_newline
+
 echo "[${APPNAME}] Deleted Successfully."
 shell_refresh

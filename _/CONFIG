@@ -4,6 +4,7 @@ local SYSTEM="${HOME}/zishh/_"
 local SETTINGS="${HOME}/zishh/_/Settings"
 
 local MYSQL_DATABASES_PATH="/var/lib/mysql"
+local NGINX_DOMAIN_CONFIGS="${HOME}/.valet/nginx"
 
 # ################################################
 
