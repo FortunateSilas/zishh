@@ -52,7 +52,9 @@ function app_wordpress() {
     echo "DO NOT FORGET TO COPY YOUR WP-ADMIN PASSWORD "
     echo "============================================ "
 
-    wp core install --url="https://${1}.${VALET_DOMAIN}" --title="${1}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}" --skip-email
+    wp core install --url="https://${1}.${VALET_DOMAIN}" --title="${1}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}" --admin_password="${USER_PASSWORD}" --skip-email
+    echo "username : ${USER_ADMIN}"
+    echo "password : ${USER_PASSWORD}"
 
     shell_refresh
 
