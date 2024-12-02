@@ -33,9 +33,17 @@ function Wordpress() {
 
 		;;
 		"Install" )
-        # Host Refresh
 
-			# Comment
+			# Install Wordpress
+            wordpress_core install --url="https://${2}.${VALET_DOMAIN}" --title="${2}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}" --admin_password="${USER_PASSWORD}" --skip-email
+            echo "username : ${USER_ADMIN}"
+            echo "password : ${USER_PASSWORD}"
+
+		;;
+		"Update" )
+
+			# Update Wordpress
+            wordpress_core update
 
 		;;
 		* )

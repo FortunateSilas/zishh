@@ -24,10 +24,12 @@ local HOST_A="${HOME}/Host/Apps"
 local HOST_B="${HOME}/Host/_"
 
 # App Frameworks
-local HOST_B_FRAMEWORKS="${HOME}/Host/_/Frameworks"
-local HBF_WORDPRESS="${HOME}/Host/_/Frameworks/Wordpress"
-local HBF_LARAVEL="${HOME}/Host/_/Frameworks/Laravel"
-local HBF_BLANK="${HOME}/Host/_/Frameworks/Blank"
+local HOST_B_BLUEPRINTS="${HOME}/Host/_/Blueprints"
+local HBF_WP_CLEAN="${HOME}/Host/_/Blueprints/WP_CLEAN"
+local HBF_WP_BRICKS="${HOME}/Host/_/Blueprints/WP_BRICKS"
+local HBF_WP_ELEMENTOR="${HOME}/Host/_/Blueprints/WP_ELEMENTOR"
+local HBF_LARAVEL="${HOME}/Host/_/Blueprints/LARAVEL"
+local HBF_BLANK="${HOME}/Host/_/Blueprints/BLANK"
 
 # Tools
 local HOST_B_TOOLS="${HOME}/Host/_/Tools"

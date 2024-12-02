@@ -1,13 +1,55 @@
 function app_wordpress() {
 
+    # Choose Blueprint
+    shell_newline
+
+    # user input : select framework
+    echo "Choose Blueprint : "
+    echo "================== "
+
+    echo "1. WP Clean"
+    echo "2. WP Bricks"
+    echo "3. WP Elementor"
+
+    shell_newline
+
+    echo "Select Blueprint by Typing Number : "
+    echo "================================== "
+    read BLUEPRINT_INPUT
+
+    local BLUEPRINT="${BLUEPRINT_INPUT}"
+
+    shell_clear
+
+    case "${BLUEPRINT}" in
+        "1" )
+            echo "You have selected : Wordpress Clean "
+            echo "=================================== "
+            Folder Copy "${HBF_WP_CLEAN}" "${HOST_A}/${1}"
+        ;;
+        "2" )
+
+            echo "You have selected : WordPress Bricks "
+            echo "==================================== "
+            Folder Copy "${HBF_WP_BRICKS}" "${HOST_A}/${1}"
+
+        ;;
+        "3" )
+
+            echo "You have selected : WordPress Elementor "
+            echo "======================================= "
+            Folder Copy "${HBF_WP_ELEMENTOR}" "${HOST_A}/${1}"
+
+        ;;
+        * )
+            echo "Select a Blueprint by typing a number."
+        ;;
+    esac
+
+    shell_newline
+
     # create database
     Database Create ${1}
-
-    # Copy Wordpress Folder
-    Folder Copy "${HBF_WORDPRESS}" "${HOST_A}/${1}"
-
-    # Copy Template
-    File Copy "${AT_WORDPRESS}" "${HOST_DATA_A}/${1}.zsh"
 
     shell_pause
     shell_newline
@@ -52,9 +94,8 @@ function app_wordpress() {
     echo "DO NOT FORGET TO COPY YOUR WP-ADMIN PASSWORD "
     echo "============================================ "
 
-    wp core install --url="https://${1}.${VALET_DOMAIN}" --title="${1}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}" --admin_password="${USER_PASSWORD}" --skip-email
-    echo "username : ${USER_ADMIN}"
-    echo "password : ${USER_PASSWORD}"
+    # wp core install
+    WordPress Install ${APPNAME}
 
     shell_refresh
 
