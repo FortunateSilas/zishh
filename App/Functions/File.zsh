@@ -22,6 +22,12 @@ function File() {
 			file_create "$FILE"
 
 		;;
+		"Rename" )
+
+			# Comment
+			file_rename ${FILE} ${FILE2}
+
+		;;
 		"Edit" )
 
 			# Comment
@@ -51,7 +57,7 @@ function File() {
 		"FindReplace" )
 
 			# Comment
-			sed_find_replace $${1} ${2} ${3}
+			sed_find_replace $${2} ${3} ${3}
 
 		;;
 		"Write" )

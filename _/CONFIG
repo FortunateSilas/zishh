@@ -17,9 +17,10 @@ function SOURCEFILE() {
 . "${HOME}/zishh/_/Settings/DIRECTORIES.zsh"
 . "${HOME}/zishh/_/Settings/CORE_SCRIPTS.zsh"
 # . "${HOME}/zishh/_/Settings/CORE_FRAMEWORKS.zsh"
+
 . "${HOME}/zishh/_/Settings/FUNCTIONS.zsh"
 . "${HOST_DATA}/APPS.zsh"
-. "${HOST_DATA}/FRAMEWORKS.zsh"
+. "${HOST_DATA}/BLUEPRINTS.zsh"
 . "${HOST_DATA}/USER.zsh"
 . "${HOST_DATA}/TOOLS.zsh"
 

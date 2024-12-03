@@ -26,6 +26,13 @@ function file_delete() {
     rm -f "${1}"
 }
 
+# File Rename
+function file_rename() {
+
+    # Edit File
+    mv "${1}" "${2}"
+}
+
 # File Read
 function file_read() {
 

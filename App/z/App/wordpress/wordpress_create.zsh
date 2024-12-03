@@ -25,20 +25,20 @@ function app_wordpress() {
         "1" )
             echo "You have selected : Wordpress Clean "
             echo "=================================== "
-            Folder Copy "${HBF_WP_CLEAN}" "${HOST_A}/${1}"
+            Folder Copy "${HBF_WPCORE}" "${HOST_A}/${1}"
         ;;
         "2" )
 
             echo "You have selected : WordPress Bricks "
             echo "==================================== "
-            Folder Copy "${HBF_WP_BRICKS}" "${HOST_A}/${1}"
+            Folder Copy "${HBF_WPBRICKS}" "${HOST_A}/${1}"
 
         ;;
         "3" )
 
             echo "You have selected : WordPress Elementor "
             echo "======================================= "
-            Folder Copy "${HBF_WP_ELEMENTOR}" "${HOST_A}/${1}"
+            Folder Copy "${HBF_WPELEMENTOR}" "${HOST_A}/${1}"
 
         ;;
         * )

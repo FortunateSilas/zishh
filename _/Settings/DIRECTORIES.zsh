@@ -25,9 +25,9 @@ local HOST_B="${HOME}/Host/_"
 
 # App Frameworks
 local HOST_B_BLUEPRINTS="${HOME}/Host/_/Blueprints"
-local HBF_WP_CLEAN="${HOME}/Host/_/Blueprints/WP_CLEAN"
-local HBF_WP_BRICKS="${HOME}/Host/_/Blueprints/WP_BRICKS"
-local HBF_WP_ELEMENTOR="${HOME}/Host/_/Blueprints/WP_ELEMENTOR"
+local HBF_WPCORE="${HOME}/Host/_/Blueprints/WPCORE"
+local HBF_WPBRICKS="${HOME}/Host/_/Blueprints/WPBRICKS"
+local HBF_WPELEMENTOR="${HOME}/Host/_/Blueprints/WPELEMENTOR"
 local HBF_LARAVEL="${HOME}/Host/_/Blueprints/LARAVEL"
 local HBF_BLANK="${HOME}/Host/_/Blueprints/BLANK"
 
