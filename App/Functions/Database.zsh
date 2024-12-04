@@ -43,16 +43,7 @@ function Database() {
 		;;
 		"Import" )
 
-			# Export database if it exist in mysql
-			if [ ! -d "${MYSQL_DATABASES_PATH}/${2}" ]; then
-
-				wp db import "./${2}.sql"
-
-			else
-
-				echo "Database exists..."
-
-			fi
+			wp db import "./${2}.sql"
 
 		;;
 		* )

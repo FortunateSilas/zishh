@@ -13,7 +13,7 @@ shell_newline
 Folder Enter ${HOST_A}
 
 # create database
-Database Create ${1}
+Database Create ${APPNAME}
 
 shell_newline
 
@@ -38,6 +38,7 @@ case "${APPFRAMEWORK}" in
     "1" )
         echo "You have selected : Blank "
         echo "========================= "
+        echo "Select Option 2, Cause Blank Blueprints are not yet available."
     ;;
     "2" )
 
@@ -56,7 +57,7 @@ case "${APPFRAMEWORK}" in
     ;;
 esac
 
-shell_newline
+Database Import ${APPNAME}
 
 # generate ssl
 valet secure
@@ -68,7 +69,7 @@ shell_refresh
 
 
     # Read YesNo
-    read -s -k "?[${1}] Created successfully. Open in browser? | [ Y / N ]" yn
+    read -s -k "?[${APPNAME}] Created successfully. Open in browser? | [ Y / N ]" yn
 
     # Case yn
     case "${yn}" in

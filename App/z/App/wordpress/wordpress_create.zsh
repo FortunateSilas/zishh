@@ -30,19 +30,14 @@ function app_wordpress() {
         ;;
         "2" )
 
-            echo "You have selected : WordPress Bricks "
-            echo "==================================== "
-            Folder Copy "${HBF_WPBRICKS}" "${HOST_A}/${1}"
-
-            # create database
-            Database Create ${1}
+            . "${HOME}/zishh/App/z/App/wordpress/wp_bricks.zsh"
+            GetBricks ${1}
 
         ;;
         "3" )
 
-            echo "You have selected : WordPress Elementor "
-            echo "======================================= "
-            Folder Copy "${HBF_WPELEMENTOR}" "${HOST_A}/${1}"
+            . "${HOME}/zishh/App/z/App/wordpress/wp_elementor.zsh"
+            GetElementor ${1}
 
         ;;
         * )
@@ -99,7 +94,7 @@ function app_wordpress() {
     shell_pause
     shell_newline
 
-    echo "Installing Wordpress : "
+    echo "Wordpress Installed : "
     echo "DO NOT FORGET TO COPY YOUR WP-ADMIN PASSWORD "
     echo "============================================ "
 

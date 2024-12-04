@@ -23,11 +23,24 @@ local HOST="${HOME}/Host"
 local HOST_A="${HOME}/Host/Apps"
 local HOST_B="${HOME}/Host/_"
 
-# App Frameworks
+# App Blueprints
 local HOST_B_BLUEPRINTS="${HOME}/Host/_/Blueprints"
-local HBF_WPCORE="${HOME}/Host/_/Blueprints/Wordpress/Core"
-local HBF_WPBRICKS="${HOME}/Host/_/Blueprints/Wordpress/Bricks"
-local HBF_WPELEMENTOR="${HOME}/Host/_/Blueprints/Wordpress/Elementor"
+
+# Wordpress Blueprints
+
+# BPCORE
+local BPCORE="BpCore"
+local HBF_WPBPCORE="${HOME}/Host/_/Blueprints/Wordpress/${BPCORE}"
+
+# BPBRICKS
+local BPBRICKS="BpBricks"
+local HBF_WPBPBRICKS="${HOME}/Host/_/Blueprints/Wordpress/${BPBRICKS}"
+
+# BPELEMENTOR
+local BPELEMENTOR="BpElementor"
+local HBF_WPBPELEMENTOR="${HOME}/Host/_/Blueprints/Wordpress/${BPELEMENTOR}"
+
+# Laravel Blueprints
 local HBF_LARAVEL="${HOME}/Host/_/Blueprints/Laravel"
 local HBF_BLANK="${HOME}/Host/_/Blueprints/Blank"
 
