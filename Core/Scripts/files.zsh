@@ -3,7 +3,7 @@
 # File Create
 function file_copy() {
     # Create File
-    cp "${1}" "${2}"
+    cp -f "${1}" "${2}"
 }
 
 # File Create

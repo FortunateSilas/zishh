@@ -30,9 +30,9 @@ function Database() {
 		"Export" )
 
 			# Export database if it exist in mysql
-			if [ -d "${MYSQL_DATABASES_PATH}/${THIS_FOLDER}" ]; then
+			if [ -d "${MYSQL_DATABASES_PATH}/${2}" ]; then
 
-				wp db export "./${THIS_FOLDER}.sql"
+				wp db export "./${2}.sql"
 
 			else
 
@@ -44,9 +44,9 @@ function Database() {
 		"Import" )
 
 			# Export database if it exist in mysql
-			if [ ! -d "${MYSQL_DATABASES_PATH}/${THIS_FOLDER}" ]; then
+			if [ ! -d "${MYSQL_DATABASES_PATH}/${2}" ]; then
 
-				wp db import "./${THIS_FOLDER}.sql"
+				wp db import "./${2}.sql"
 
 			else
 

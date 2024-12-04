@@ -57,7 +57,7 @@ function File() {
 		"FindReplace" )
 
 			# Comment
-			sed_find_replace $${2} ${3} ${3}
+			sed_find_replace ${2} ${3} ${4}
 
 		;;
 		"Write" )

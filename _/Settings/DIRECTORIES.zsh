@@ -25,11 +25,11 @@ local HOST_B="${HOME}/Host/_"
 
 # App Frameworks
 local HOST_B_BLUEPRINTS="${HOME}/Host/_/Blueprints"
-local HBF_WPCORE="${HOME}/Host/_/Blueprints/WPCORE"
-local HBF_WPBRICKS="${HOME}/Host/_/Blueprints/WPBRICKS"
-local HBF_WPELEMENTOR="${HOME}/Host/_/Blueprints/WPELEMENTOR"
-local HBF_LARAVEL="${HOME}/Host/_/Blueprints/LARAVEL"
-local HBF_BLANK="${HOME}/Host/_/Blueprints/BLANK"
+local HBF_WPCORE="${HOME}/Host/_/Blueprints/Wordpress/Core"
+local HBF_WPBRICKS="${HOME}/Host/_/Blueprints/Wordpress/Bricks"
+local HBF_WPELEMENTOR="${HOME}/Host/_/Blueprints/Wordpress/Elementor"
+local HBF_LARAVEL="${HOME}/Host/_/Blueprints/Laravel"
+local HBF_BLANK="${HOME}/Host/_/Blueprints/Blank"
 
 # Tools
 local HOST_B_TOOLS="${HOME}/Host/_/Tools"
@@ -54,16 +54,19 @@ function COMPILECONFIGS() {
     # Reset CORE.zsh
     echo -n > ${FILE}
 
-    # sleep 1
+    sleep 1
 
-    # Loop through each .zsh file in the DIR
-    for file in "$DIR"/*; do
-        # Check if the file exists and is readable
-        if [ -r "$file" ]; then
-            # Append the source command to the output file
-            echo "source \"$file\"" >> "$FILE"
-        fi
-    done
+    if [ -n "$(ls -A ${DIR})" ]; then
+
+        # Loop through each .zsh file in the DIR
+        for file in "$DIR"/*; do
+            # Check if the file exists and is readable
+            if [ -r "$file" ]; then
+                # Append the source command to the output file
+                echo "source \"$file\"" >> "$FILE"
+            fi
+        done
+    fi
 }
 
 function COMPILEAPPS() {
@@ -78,16 +81,19 @@ function COMPILEAPPS() {
     # Reset CORE.zsh
     echo -n > ${FILE}
 
-    # sleep 1
+    sleep 1
 
-    # Loop through each .zsh file in the DIR
-    for file in "$DIR"/*; do
-        # Check if the file exists and is readable
-        if [ -r "$file" ]; then
-            # Append the source command to the output file
-            echo "source \"$file\"" >> "$FILE"
-        fi
-    done
+    if [ -n "$(ls -A ${DIR})" ]; then
+
+        # Loop through each .zsh file in the DIR
+        for file in "$DIR"/*; do
+            # Check if the file exists and is readable
+            if [ -r "$file" ]; then
+                # Append the source command to the output file
+                echo "source \"$file\"" >> "$FILE"
+            fi
+        done
+    fi
 }
 
 # Get Core Scripts

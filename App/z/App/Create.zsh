@@ -12,6 +12,9 @@ shell_newline
 # cd apps
 Folder Enter ${HOST_A}
 
+# create database
+Database Create ${1}
+
 shell_newline
 
 # user input : select framework
@@ -59,4 +62,30 @@ shell_newline
 valet secure
 
 # Refresh Shell
+shell_newline
+
 shell_refresh
+
+
+    # Read YesNo
+    read -s -k "?[${1}] Created successfully. Open in browser? | [ Y / N ]" yn
+
+    # Case yn
+    case "${yn}" in
+        "y" )
+        
+            valet open
+
+        ;;
+
+        "n" )
+        
+            echo "Enjoy Creating..."
+
+        ;;
+
+        * ) 
+            clear
+            echo "Enter [y] or [n]"
+        ;;
+    esac

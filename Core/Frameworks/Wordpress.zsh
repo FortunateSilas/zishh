@@ -24,12 +24,12 @@ case "${OPTION}" in
 
             "Export" )
 
-                Database Export
+                Database Export ${3}
 
             ;;
             "Import" )
 
-                Database Import
+                Database Import ${3}
 
             ;;
             * )

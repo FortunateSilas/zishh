@@ -1,13 +1,14 @@
 function app_wordpress() {
 
-    # Choose Blueprint
+    # Copy Data File
+    File Copy "${AT_WORDPRESS}" "$HOST_DATA_A/${1}.zsh"
     shell_newline
 
     # user input : select framework
     echo "Choose Blueprint : "
     echo "================== "
 
-    echo "1. WP Clean"
+    echo "1. WP Core"
     echo "2. WP Bricks"
     echo "3. WP Elementor"
 
@@ -23,15 +24,18 @@ function app_wordpress() {
 
     case "${BLUEPRINT}" in
         "1" )
-            echo "You have selected : Wordpress Clean "
-            echo "=================================== "
-            Folder Copy "${HBF_WPCORE}" "${HOST_A}/${1}"
+
+            . "${HOME}/zishh/App/z/App/wordpress/wp_core.zsh"
+            GetCore ${1}
         ;;
         "2" )
 
             echo "You have selected : WordPress Bricks "
             echo "==================================== "
             Folder Copy "${HBF_WPBRICKS}" "${HOST_A}/${1}"
+
+            # create database
+            Database Create ${1}
 
         ;;
         "3" )
@@ -46,10 +50,15 @@ function app_wordpress() {
         ;;
     esac
 
+    shell_refresh
+
+    File Delete "${HOST_A}/${1}/wp-config.php"
+    File Rename "${HOST_A}/${1}/wp-config-sample.php" "${HOST_A}/${1}/wp-config.php"
+
     shell_newline
 
     # create database
-    Database Create ${1}
+    # Database Create ${1}
 
     shell_pause
     shell_newline
@@ -61,10 +70,10 @@ function app_wordpress() {
     sed_find_replace "define( 'DB_NAME', 'database_name_here' );" "define( 'DB_NAME', '${1}' );" "${HOST_A}/${1}/wp-config.php"
 
     # Change mysql user
-    sed_find_replace "define( 'DB_USER', 'username_here' );" "define( 'DB_USER', 'root' );" "${HOST_A}/${1}/wp-config.php"
+    sed_find_replace "define( 'DB_USER', 'username_here' );" "define( 'DB_USER', '${MYSQL_USERNAME}' );" "${HOST_A}/${1}/wp-config.php"
 
     # Change mysql password
-    sed_find_replace "define( 'DB_PASSWORD', 'password_here' );" "define( 'DB_PASSWORD', '' );" "${HOST_A}/${1}/wp-config.php"
+    sed_find_replace "define( 'DB_PASSWORD', 'password_here' );" "define( 'DB_PASSWORD', '${MYSQL_PASSWORD}' );" "${HOST_A}/${1}/wp-config.php"
 
     shell_newline
 
@@ -85,7 +94,7 @@ function app_wordpress() {
     sed_find_replace 'local DIR="${HOST_A}/Wordpress"' "local DIR="${HOST_A}/${1}"" "${HOST_DATA_A}/${1}.zsh"
 
     # cd apps/project
-    Folder Enter ${HOST_A}/${APPNAME}
+    Folder Enter ${HOST_A}/${1}
     
     shell_pause
     shell_newline
@@ -95,7 +104,18 @@ function app_wordpress() {
     echo "============================================ "
 
     # wp core install
-    WordPress Install ${APPNAME}
+    # Wordpress Install
+
+    # wp core install --url="https://${1}.${VALET_DOMAIN}" --title="${1}" --admin_user="${USER_ADMIN}" --admin_email="${USER_EMAIL}" --admin_password="${USER_PASSWORD}" --skip-email
+
+    shell_newline
+
+    echo "Username & Password : "
+    echo "===================== "
+    echo "username : ${USER_ADMIN}"
+    echo "password : ${USER_PASSWORD}"
+
+    shell_newline
 
     shell_refresh
 

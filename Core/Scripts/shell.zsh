@@ -56,21 +56,21 @@ function shell_read_yesno() {
 
     # Case yn
     case "${yn}" in
-			"y" )
-            
-                ${2}
+        "y" )
+        
+            ${2}
 
-			;;
+        ;;
 
-			"n" )
-            
-                ${3}
+        "n" )
+        
+            ${3}
 
-			;;
+        ;;
 
-			* ) 
-                clear
-                echo "Enter [y] or [n]"
-            ;;
-		esac
+        * ) 
+            clear
+            echo "Enter [y] or [n]"
+        ;;
+    esac
 }
