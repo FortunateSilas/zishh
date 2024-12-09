@@ -111,7 +111,6 @@ function app_wordpress() {
     echo "password : ${USER_PASSWORD}"
 
     shell_newline
-
     shell_refresh
 
 }
