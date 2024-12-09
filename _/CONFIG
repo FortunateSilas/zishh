@@ -3,8 +3,12 @@ local Z="${HOME}/zishh"
 local SYSTEM="${HOME}/zishh/_"
 local SETTINGS="${HOME}/zishh/_/Settings"
 
-local MYSQL_DATABASES_PATH="/var/lib/mysql"
-local NGINX_DOMAIN_CONFIGS="${HOME}/.valet/Nginx"
+
+# This Folder
+local THIS_FOLDER=$(printf '%s\n' "${PWD##*/}")
+
+# Valet Domain
+local VALET_DOMAIN=$(valet domain)
 
 # ################################################
 

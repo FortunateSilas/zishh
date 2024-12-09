@@ -57,8 +57,6 @@ case "${APPFRAMEWORK}" in
     ;;
 esac
 
-Database Import ${APPNAME}
-
 # generate ssl
 valet secure
 

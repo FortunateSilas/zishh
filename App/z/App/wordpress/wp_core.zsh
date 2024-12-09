@@ -20,10 +20,9 @@ function GetCore() {
     shell_refresh
 
     File FindReplace "${BPCORE}" "${1}" "${1}.sql"
+    File FindReplace "${BPCORE:l}" "${1:l}" "${1}.sql"
     File FindReplace "${BPCORE:l}.${VALET_DOMAIN}" "${1}.${VALET_DOMAIN}" "${1}.sql"
 
     shell_refresh
-
-    Database Import "${1}"
 
 }

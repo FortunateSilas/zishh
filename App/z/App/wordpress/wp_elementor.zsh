@@ -20,10 +20,9 @@ function GetElementor() {
     shell_refresh
 
     File FindReplace "${BPELEMENTOR}" "${1}" "${1}.sql"
+    File FindReplace "${BPELEMENTOR:l}" "${1:l}" "${1}.sql"
     File FindReplace "${BPELEMENTOR:l}.${VALET_DOMAIN}" "${1}.${VALET_DOMAIN}" "${1}.sql"
 
     shell_refresh
-
-    Database Import "${1}"
 
 }

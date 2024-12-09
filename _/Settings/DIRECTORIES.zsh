@@ -21,28 +21,28 @@ local DATA_H="${HOME}/zishh/Data/Host"
 # Host
 local HOST="${HOME}/Host"
 local HOST_A="${HOME}/Host/Apps"
-local HOST_B="${HOME}/Host/_"
+local HOST_B="${HOME}/Host/Blueprints"
+local HOST_D="${HOME}/Host/_"
 
 # App Blueprints
-local HOST_B_BLUEPRINTS="${HOME}/Host/_/Blueprints"
 
 # Wordpress Blueprints
 
 # BPCORE
 local BPCORE="BpCore"
-local HBF_WPBPCORE="${HOME}/Host/_/Blueprints/Wordpress/${BPCORE}"
+local HBF_WPBPCORE="${HOME}/Host/Blueprints/Wordpress/${BPCORE}"
 
 # BPBRICKS
 local BPBRICKS="BpBricks"
-local HBF_WPBPBRICKS="${HOME}/Host/_/Blueprints/Wordpress/${BPBRICKS}"
+local HBF_WPBPBRICKS="${HOME}/Host/Blueprints/Wordpress/${BPBRICKS}"
 
 # BPELEMENTOR
 local BPELEMENTOR="BpElementor"
-local HBF_WPBPELEMENTOR="${HOME}/Host/_/Blueprints/Wordpress/${BPELEMENTOR}"
+local HBF_WPBPELEMENTOR="${HOME}/Host/Blueprints/Wordpress/${BPELEMENTOR}"
 
 # Laravel Blueprints
-local HBF_LARAVEL="${HOME}/Host/_/Blueprints/Laravel"
-local HBF_BLANK="${HOME}/Host/_/Blueprints/Blank"
+local HBF_LARAVEL="${HOME}/Host/Blueprints/Laravel"
+local HBF_BLANK="${HOME}/Host/Blueprints/Blank"
 
 # Tools
 local HOST_B_TOOLS="${HOME}/Host/_/Tools"
@@ -51,9 +51,11 @@ local HBT_PHPMYADMIN="${HOME}/Host/_/Tools/phpMyAdmin"
 # Tools
 local HOST_DATA="${HOME}/Host/_/Data"
 local HOST_DATA_A="${HOME}/Host/_/Data/Apps"
-local HOST_DATA_U="${HOME}/Host/_/Data/User"
 local HOST_DATA_T="${HOME}/Host/_/Data/Tools"
 local HOST_DATA_F="${HOME}/Host/_/Data/Frameworks"
+
+# User Variables
+local HOST_DATA_U="${HOME}/Host/_/Data/User.zsh"
 
 function COMPILECONFIGS() {
 

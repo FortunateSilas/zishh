@@ -16,13 +16,16 @@ Folder Create ${HOST_B}
 # Folder Enter ${HOST_B}
 
 # Create Frameworks
-Folder Create ${HOST_B_FRAMEWORKS}
+Folder Create ${HOST_B}
 
 # Create Tools
 Folder Create ${HOST_B_TOOLS}
 
-# Create Tools
-Folder Create ${HOST_B_DATA}
+# Create Data Folder
+Folder Create ${HOST_DATA}
+Folder Create ${HOST_DATA_A}
+Folder Create ${HOST_DATA_F}
+Folder Create ${HOST_DATA_T}
 
 # Enter Frameworks
 # Folder Enter ${HOST_B_FRAMEWORKS}
