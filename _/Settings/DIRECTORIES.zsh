@@ -22,31 +22,31 @@ local DATA_H="${HOME}/zishh/Data/Host"
 local HOST="${HOME}/Host"
 local HOST_A="${HOME}/Host/Apps"
 local HOST_B="${HOME}/Host/Blueprints"
-local HOST_D="${HOME}/Host/_"
+local HOST_D="${HOME}/Host/_Data"
 
 # App Blueprints
 
 # Wordpress Blueprints
 
-# BPCORE
-local BPCORE="BpCore"
-local HBF_WPBPCORE="${HOME}/Host/Blueprints/Wordpress/${BPCORE}"
+# WPNORMAL
+local WPNORMAL="WPNORMAL"
+local HB_WPNORMAL="${HOME}/Host/Blueprints/Wordpress/${WPNORMAL}"
 
-# BPBRICKS
-local BPBRICKS="BpBricks"
-local HBF_WPBPBRICKS="${HOME}/Host/Blueprints/Wordpress/${BPBRICKS}"
+# WPBRICKS
+local WPNORMAL="WPBRICKS"
+local HB_WPBRICKS="${HOME}/Host/Blueprints/Wordpress/${WPBRICKS}"
 
-# BPELEMENTOR
-local BPELEMENTOR="BpElementor"
-local HBF_WPBPELEMENTOR="${HOME}/Host/Blueprints/Wordpress/${BPELEMENTOR}"
+# WPELEMENTOR
+local WPELEMENTOR="WPELEMENTOR"
+local HB_WPELEMENTOR="${HOME}/Host/Blueprints/Wordpress/${WPELEMENTOR}"
 
 # Laravel Blueprints
 local HBF_LARAVEL="${HOME}/Host/Blueprints/Laravel"
-local HBF_BLANK="${HOME}/Host/Blueprints/Blank"
+local HB_BLANK="${HOME}/Host/Blueprints/Blank"
 
-# Tools
-local HOST_B_TOOLS="${HOME}/Host/_/Tools"
-local HBT_PHPMYADMIN="${HOME}/Host/_/Tools/phpMyAdmin"
+# Data
+local HOST_D_TOOLS="${HOME}/Host/_Data/Tools"
+local HDT_PHPMYADMIN="${HOME}/Host/_Data/Tools/phpMyAdmin"
 
 # Tools
 local HOST_DATA="${HOME}/Host/_/Data"

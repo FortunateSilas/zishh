@@ -3,23 +3,34 @@ Folder Enter ${HOME}
 # Create Host
 Folder Create ${HOST}
 
-# Enter Host
-# Folder Enter ${HOST}
-
 # Create Apps
 Folder Create ${HOST_A}
 
-# Create _
+# Create Blueprints
 Folder Create ${HOST_B}
 
-# Enter _
-# Folder Enter ${HOST_B}
+# Create Data
+Folder Create ${HOST_D}
 
-# Create Frameworks
-Folder Create ${HOST_B}
+# Apps
+# valet park
 
-# Create Tools
-Folder Create ${HOST_B_TOOLS}
+# Blueprints
+# wordpress
+# wpnormal
+Folder Create ${HB_WPNORMAL}
+Folder Enter ${HB_WPNORMAL}
+# 
+
+# wpbricks
+# wpelementor
+
+
+# Data
+
+
+# Create Data Tools
+Folder Create ${HOST_D_TOOLS}
 
 # Create Data Folder
 Folder Create ${HOST_DATA}
