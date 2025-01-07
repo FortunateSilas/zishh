@@ -1,6 +1,8 @@
 # Folder Create
 function folder_create() {
-    mkdir ${1}
+
+        mkdir ${1}
+
 }
 
 # Folder Read
@@ -12,14 +14,22 @@ function folder_read() {
 
 # Folder Copy
 function folder_copy() {
-    
+
     # Edit Folder
     cp -r "${1}" "${2}"
 }
 
+# Folder Move
+function folder_move() {
+
+    # Edit Folder
+    mv -r "${1}" "${2}"
+
+}
+
 # Folder Edit
 function folder_edit() {
-    
+
     # Edit Folder
     mv "${1}" "${2}"
 }
